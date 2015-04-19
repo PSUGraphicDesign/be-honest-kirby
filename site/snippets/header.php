@@ -8,6 +8,9 @@
     <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
 
     <?= css('assets/css/be-honest.css') ?>
+    <?= css('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css') ?>
+
+    <?= js('https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js') ?>
     <?= js('assets/js/be-honest.js') ?>
 
   </head>
