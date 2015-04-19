@@ -15,7 +15,7 @@
 
   </head>
 
-  <body class="<?= join([$page->template(), $page->uid()], ' ') ?>">
+  <body class="<?= BH::body_classes() ?>">
     <header>
       <section>
         <h1><?= $site->title()->html() ?></h1>
