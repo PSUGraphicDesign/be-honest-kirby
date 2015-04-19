@@ -1,5 +1,14 @@
 <? class BH {
   public static function body_classes () {
-    return join([page()->uid(), page()->template()], ' ');
+    $classes = [
+      page()->uid(),
+      page()->template()
+    ];
+
+    $classes = array_filter($classes, function($class) {
+      return !preg_match('/^\d+$/', $class);
+    });
+
+    return join($classes, ' ');
   }
 }
