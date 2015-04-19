@@ -18,7 +18,11 @@
   <body class="<?= BH::body_classes() ?>">
     <header>
       <section>
-        <h1><?= $site->title()->html() ?></h1>
+        <article>
+          <div class="column full">
+            <h1><?= $site->title()->html() ?></h1>
+          </div>
+        </article>
       </section>
     </header>
     
