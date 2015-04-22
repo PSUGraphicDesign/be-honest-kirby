@@ -20,14 +20,6 @@ fields:
       Senior: Senior
     width: 1/2
     icon: graduation-cap
-  profile_image:
-    label: Profile Photo
-    type: select
-    options: images
-    help: Pick the file from this student’s images. Profile images should be uploaded square, no larger than 600px.
-  bio:
-    label: Biographical Info
-    type: textarea
   website:
     label: Website
     type: url
