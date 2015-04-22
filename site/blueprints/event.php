@@ -15,12 +15,16 @@ fields:
   title:
     label: Title
     type: text
-  year:
-    label: Year
-    type: number
-    icon: calendar-o
-    validate:
-      min: 2015
+  date:
+    label: Date
+    type: Date
+    width: 1/2
+  time:
+    label: Time
+    type: time
+    interval: 60
+    width: 1/2
+
   intro:
     label: Introduction
     type: textarea
