@@ -22,13 +22,13 @@
       <div class="column half mobile-full">
         <div class="speaker card <?= BH::random_color() ?>">
           <div class="speaker container">
-            <div class="speaker name">
+            <div class="name">
               <?= $speaker->title() ?>
             </div>
-            <div class="speaker title">
+            <div class="title">
               <?= $speaker->professional() ?>
             </div>
-            <div class="speaker website">
+            <div class="website">
               <a href="<?= $speaker->website() ?>" target="_blank"><?= $speaker->website() ?></a>
             </div>
           </div>
@@ -47,13 +47,13 @@
         <? foreach ( $students as $student ) { ?>
           <div class="column fifth tablet-third mobile-full">
             <div class="student card <?= strtolower($student->year()) ?>">
-              <div class="student name"> 
+              <div class="name"> 
                <?= $student->title() ?>
               </div>
-              <div class="student year">
+              <div class="year">
                 <?= $student->year() ?>
               </div>
-              <div class="student website">
+              <div class="website">
                 <a href="<?= $student->website() ?>" target="_blank"><?= $student->website() ?></a>
               </div>
             </div>
