@@ -19,7 +19,7 @@
     </div>
 
     <? foreach ( $speakers as $speaker ) { ?>
-      <div class="column half">
+      <div class="column half mobile-full">
         <div class="speaker card <?= BH::random_color() ?>">
           <div class="speaker container">
             <div class="speaker name">
@@ -45,7 +45,7 @@
     </div>
 
         <? foreach ( $students as $student ) { ?>
-          <div class="column fifth">
+          <div class="column fifth tablet-third mobile-full">
             <div class="student card <?= strtolower($student->year()) ?>">
               <div class="student name"> 
                <?= $student->title() ?>
