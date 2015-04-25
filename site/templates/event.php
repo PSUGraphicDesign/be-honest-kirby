@@ -63,7 +63,7 @@
 </section>
 
 <section class="sponsors">
-  <article>
+  <article class="centered-layout">
     <div class="column full">
       <h2>Sponsors</h2>
     </div>
