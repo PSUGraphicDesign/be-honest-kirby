@@ -14,4 +14,6 @@
       </section>
     </footer>
   </body>
+  <?= js('//use.typekit.net/hcj0qxr.js') ?>
+  <script>try{Typekit.load();}catch(e){}</script>
 </html>
