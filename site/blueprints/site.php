@@ -48,3 +48,45 @@ fields:
     label: Google Analytics Key
     type: text
     help: Add just the key provided by Google Analytics. Not required, but recommended!
+
+  section_footer:
+    label: Footer
+    type: headline
+
+  footer_raffle_donors:
+    label: Raffle Donors
+    type: textarea
+    size: small
+    buttons: false
+    width: 1/2
+  footer_officers:
+    label: FoGD Officers
+    type: textarea
+    size: small
+    buttons: false
+    width: 1/2
+  footer_past_speakers:
+    label: Past Speakers
+    type: textarea
+    size: small
+    buttons: false
+    width: 1/2
+  footer_design_credits:
+    label: FoGD Officers
+    type: textarea
+    size: small
+    buttons: false
+    width: 1/2
+  footer_development_credits:
+    label: FoGD Officers
+    type: textarea
+    size: small
+    buttons: false
+    width: 1/2
+  footer_links:
+    label: Other Links
+    type: textarea
+    size: small
+    buttons: false
+    width: 1/2
+    
