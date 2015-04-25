@@ -10,7 +10,7 @@
 
      </div>
   </article>
-</div>
+</section>
 
 <section class="speakers">
   <article>
