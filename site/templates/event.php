@@ -5,7 +5,7 @@
      <div class="column full">
 
         <div class="about">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc laoreet nec ligula sit amet pretium. Ut sagittis mauris aliquam, pulvinar neque sit amet, sagittis libero. Integer et justo quis nisl lacinia aliquam. Fusce ornare lorem ligula, nec finibus orci suscipit et. Nunc tortor tellus, gravida in mauris vel, suscipit pulvinar lorem. Quisque non nibh feugiat, lobortis mi at, congue ante. Praesent nulla eros, ultrices id tristique et, semper ac sem. Donec vitae diam nisl.</p>
+          <?= $page->intro()->kirbytext() ?>
         </div>
 
      </div>
