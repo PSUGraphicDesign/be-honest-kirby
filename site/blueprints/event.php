@@ -22,7 +22,7 @@ fields:
   time:
     label: Time
     type: time
-    interval: 60
+    interval: 30
     width: 1/2
 
   intro:

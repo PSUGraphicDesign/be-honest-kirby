@@ -1,7 +1,66 @@
+
+// Header 
+
+.bh-header
+  background-image: url('../images/header.png')
+  background-repeat: no-repeat
+  background-position: center
+  max-width: 100%
+  height: 799px
+
+// Intro
+
+.about
+  color: $secondary-color
+  background-color: $primary-color
+  box-shadow: -10px 10px 0 rgba(0,0,0,.5)
+
+  p
+    font-size: $type-size-base
+    line-height: ($type-size-base * 1.5 )
+    padding: 20px
+
+// Speaker Card
+
 .card
-  box-shadow: 10px 10px 0 rgba(0,0,0,.15)
+  @extend .background
+  background-color: #90CD98
+  height: 360px
+  margin-bottom: 35px
+
+// Student Card
+
+.card2
+  @extend .background
+  background-size: 18%
+  background-color: #f38188
+  height: 150px
+  margin-bottom: 35px
 
   &.orange
     background-color: $color-orange
   &.green
+    background-color: $color-green
   &.pink
+    background-color: $color-pink
+
+// Sponsor Card
+
+.card3
+  @extend .background
+  background-color: $primary-color
+  color: $secondary-color
+  text-align: center
+  height: 150px
+
+// Card Info Position
+
+.container
+  position: absolute
+  left: 50px
+  bottom: 65px
+
+.container2
+  position: absolute
+  left: 35px
+  bottom: 50px

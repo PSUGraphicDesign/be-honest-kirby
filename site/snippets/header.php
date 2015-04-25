@@ -20,8 +20,11 @@
       <section>
         <article>
           <div class="column full">
-            <h1><?= $site->title()->html() ?></h1>
+
+            <div class="bh-header"></div>
+
           </div>
+
         </article>
       </section>
     </header>
