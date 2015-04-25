@@ -30,7 +30,7 @@
                   <?= $speaker->professional() ?>
                 </div>
                 <div class="speaker website">
-                  <a href"<?= $speaker->website() ?>" target="_blank"><?= $speaker->website() ?></a>
+                  <a href="<?= $speaker->website() ?>" target="_blank"><?= $speaker->website() ?></a>
                 </div>
               </div>
 
