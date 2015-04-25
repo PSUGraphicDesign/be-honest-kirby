@@ -11,4 +11,9 @@
 
     return join($classes, ' ');
   }
+
+  public static function random_color () {
+    $colors = ['orange', 'green', 'pink'];
+    return $colors[array_rand($colors)];
+  }
 }

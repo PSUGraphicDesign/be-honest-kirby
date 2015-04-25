@@ -20,22 +20,13 @@
     line-height: ($type-size-base * 1.5 )
     padding: 20px
 
-// Speaker Card
+// Abstract Card
 
 .card
   @extend .background
-  background-color: #90CD98
-  height: 360px
+  background-color: $color-white
   margin-bottom: 35px
-
-// Student Card
-
-.card2
-  @extend .background
-  background-size: 18%
-  background-color: #f38188
-  height: 150px
-  margin-bottom: 35px
+  padding: 10rem 2rem 2rem 2rem
 
   &.orange
     background-color: $color-orange
@@ -44,23 +35,33 @@
   &.pink
     background-color: $color-pink
 
+// Speaker Card
+
+.speakers
+  .card
+
+// Student Card
+
+.students
+  .card
+    padding: 5rem 1rem 1rem 1rem
+    background-size: 3rem
+
+    &.freshman
+      background-color: red
+    &.sophomore
+      background-color: $color-orange
+    &.junior
+      background-color: $color-green
+    &.senior
+      background-color: $color-pink
+
 // Sponsor Card
 
-.card3
-  @extend .background
-  background-color: $primary-color
-  color: $secondary-color
-  text-align: center
-  height: 150px
-
-// Card Info Position
-
-.container
-  position: absolute
-  left: 50px
-  bottom: 65px
-
-.container2
-  position: absolute
-  left: 35px
-  bottom: 50px
+.sponsors
+  .card
+    background-image: none
+    background-color: $primary-color
+    color: $secondary-color
+    text-align: center
+    padding: 3rem 2rem
