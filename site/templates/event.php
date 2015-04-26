@@ -5,6 +5,12 @@
      <div class="column full">
 
         <div class="about">
+          <div class="when">
+            <?= $page->location_host() ?> <span class="divider">|</span>
+            <?= $page->date('d/m/Y') ?> <span class="divider">|</span>
+            <?= $page->time('H:i') ?> <span class="divider">|</span>
+            <?= $page->location_address() ?>
+          </div>
           <?= $page->intro()->kirbytext() ?>
         </div>
 

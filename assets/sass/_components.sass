@@ -18,7 +18,11 @@
   p
     font-size: $type-size-base
     line-height: ($type-size-base * 1.5 )
-    padding: 20px
+    padding: 1.5rem 2rem
+
+.when
+  text-align: center
+  padding-top: 2rem
 
 // Abstract Card
 
@@ -39,6 +43,8 @@
 
 .speakers
   .card
+    +mobile
+      &.mobile-full
 
 // Student Card
 
@@ -65,3 +71,7 @@
     color: $secondary-color
     text-align: center
     padding: 3rem 2rem
+
+// Date Divider
+.divider
+  color: $color-orange
