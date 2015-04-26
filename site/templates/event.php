@@ -78,8 +78,7 @@
         <? foreach ( $sponsors as $sponsor ) { ?>
           <div class="column fifth">
             <div class="card">
-              <?= html::a($sponsor['url'], $sponsor['name'], ['target' => '_blank']) ?>
-              <!--<?= html::img($sponsor['logo']) ?>-->
+              <?= html::a($sponsor['url'], html::img($page->image($sponsor['logo'])->url()), ['target' => '_blank']) ?>
            </div> 
           </div>
         <? } ?>
