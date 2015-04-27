@@ -8,7 +8,7 @@ body
 
 body
   font-size: 50px
-  // background-image: url('../images/pattern.png')
+  background-image: url('../images/pattern.png')
 
 section
   // Sections divide areas within `header`, `main` and `footer`
@@ -27,6 +27,7 @@ article
 
 
 img
+  display: block
   max-width: 100%
 
 figure
@@ -43,8 +44,46 @@ a
 
   &:hover
     color: $secondary-color
-    font-weight: bold
 
   &:visited
     color: inherit
 
+// Footer
+
+footer
+  background: $primary-color
+  color: $secondary-color
+
+  .departments
+    .department-logo
+      a
+        display: block
+      img
+        margin: 0 auto
+
+  .links
+    .column
+      text-align: center
+
+    ul
+      padding: 0
+      li
+        list-style: none
+
+    h5
+      span
+        display: inline-block
+        padding: 0 1rem 1rem 1rem
+        border-bottom: 1px solid $color-white
+
+    .donors
+    .officers
+    .past-speakers
+    .design-credits
+    .development-credits
+    .misc
+
+  .address
+    .column
+      text-align: center
+      color: $color-pink

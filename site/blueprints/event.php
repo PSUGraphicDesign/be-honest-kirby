@@ -68,3 +68,28 @@ fields:
         label: Notes
         type: textarea
         icon: info
+
+  departments:
+    label: Departments
+    type: structure
+    entry: >
+      <code>{{logo}}</code>
+      <div><strong><a href="{{url}}">{{name}}</a></strong></div>
+      <p>{{notes}}</p>
+    fields:
+      name:
+        label: Department Name
+        type: text
+        required: true
+      logo:
+        label: logo
+        type: select
+        options: images
+        required: true
+      url:
+        label: URL
+        type: url
+      notes:
+        label: Notes
+        type: textarea
+        icon: info

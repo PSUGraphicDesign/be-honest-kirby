@@ -10,15 +10,18 @@
 
 // Intro
 
-.about
+.intro
   color: $secondary-color
   background-color: $primary-color
-  box-shadow: -10px 10px 0 rgba(0,0,0,.5)
 
   p
     font-size: $type-size-base
     line-height: ($type-size-base * 1.5 )
-    padding: 20px
+    padding: 1.5rem 2rem
+
+.when
+  text-align: center
+  padding-top: 2rem
 
 // Abstract Card
 
@@ -35,26 +38,6 @@
   &.pink
     background-color: $color-pink
 
-// Speaker Card
-
-.speakers
-  .card
-
-// Student Card
-
-.students
-  .card
-    padding: 5rem 1rem 1rem 1rem
-    background-size: 3rem
-
-    &.freshman
-      background-color: red
-    &.sophomore
-      background-color: $color-orange
-    &.junior
-      background-color: $color-green
-    &.senior
-      background-color: $color-pink
 
 // Sponsor Card
 
@@ -65,3 +48,9 @@
     color: $secondary-color
     text-align: center
     padding: 3rem 2rem
+    img
+      margin: 0 auto
+
+// Date Divider
+.divider
+  color: $color-orange

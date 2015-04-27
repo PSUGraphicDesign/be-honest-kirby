@@ -5,6 +5,12 @@
      <div class="column full">
 
         <div class="about">
+          <div class="when">
+            <?= $page->location_host() ?> <span class="divider">|</span>
+            <?= $page->date('d/M js/Y') ?> <span class="divider">|</span>
+            <?= $page->time('H:i') ?> <span class="divider">|</span>
+            <?= $page->location_address() ?>
+          </div>
           <?= $page->intro()->kirbytext() ?>
         </div>
 
@@ -68,16 +74,13 @@
       <h2>Sponsors</h2>
     </div>
 
-      <div class="wrapper">
         <? foreach ( $sponsors as $sponsor ) { ?>
           <div class="column fifth">
             <div class="card">
-              <?= html::a($sponsor['url'], $sponsor['name'], ['target' => '_blank']) ?>
-              <!--<?= html::img($sponsor['logo']) ?>-->
+              <?= html::a($sponsor['url'], html::img($page->image($sponsor['logo'])->url()), ['target' => '_blank']) ?>
            </div> 
           </div>
         <? } ?>
-      </div>
 
   </article>
 </section>
