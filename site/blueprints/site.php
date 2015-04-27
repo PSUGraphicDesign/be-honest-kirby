@@ -72,13 +72,13 @@ fields:
     buttons: false
     width: 1/2
   footer_design_credits:
-    label: FoGD Officers
+    label: Design Credits
     type: textarea
     size: small
     buttons: false
     width: 1/2
   footer_development_credits:
-    label: FoGD Officers
+    label: Development Credits
     type: textarea
     size: small
     buttons: false
