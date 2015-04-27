@@ -7,8 +7,8 @@
         <div class="about">
           <div class="when">
             <?= $page->location_host() ?> <span class="divider">|</span>
-            <?= $page->date('d/M js/Y') ?> <span class="divider">|</span>
-            <?= $page->time('H:i') ?> <span class="divider">|</span>
+            <?= $page->date('M jS') ?> <span class="divider">|</span>
+            <?= $page->time('h:i a') ?> <span class="divider">|</span>
             <?= $page->location_address() ?>
           </div>
           <?= $page->intro()->kirbytext() ?>
