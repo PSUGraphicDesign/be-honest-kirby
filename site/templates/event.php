@@ -60,7 +60,7 @@
                 <?= $student->year() ?>
               </div>
               <div class="website">
-                <a href="<?= $student->website() ?>" target="_blank"><?= $student->website() ?></a>
+                <a href="<?= $student->website() ?>" target="_blank"><?= BH::format_url($student->website()) ?></a>
               </div>
             </div>
           </div>

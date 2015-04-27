@@ -16,4 +16,8 @@
     $colors = ['orange', 'green', 'pink'];
     return $colors[array_rand($colors)];
   }
+
+  public static function format_url ($url) {
+    return str_replace('http://', '', $url);
+  }
 }
