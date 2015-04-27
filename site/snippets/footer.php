@@ -3,7 +3,7 @@
       <section>
         <article class="centered-layout">
             <? foreach ( $departments as $department ) { ?>
-              <div class="column fifth">
+              <div class="column sixth">
                 <?= html::a($department['url'], html::img($page->image($department['logo'])->url()), ['target' => '_blank']) ?>
               </div>
             <? } ?>
