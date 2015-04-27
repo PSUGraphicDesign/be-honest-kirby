@@ -1,6 +1,16 @@
     </main>
     <footer>
       <section>
+        <article class="other">
+          <div class="column full">
+            <? foreach ( $departments as $department ) { ?>
+              <div class="column third">
+                <?= html::a($department['url'], html::img($page->image($department['logo'])->url()), ['target' => '_blank']) ?>
+              </div>
+            <? } ?>
+          </div>
+        </article>
+
         <article class="links">
           <div class="column sixth donors tablet-third mobile-half">
             <h5><span>Raffle Donors</span></h5>
@@ -26,6 +36,13 @@
             <h5><span>Links</span></h5>
             <?= $site->footer_links()->kirbytext() ?>
           </div>
+        </article>
+
+        <article class="address">
+          <div class="column full">
+            <?= $page->location_host() ?>
+            <?= $page->location_address() ?>
+         </div>
         </article>
       </section>
     </footer>
