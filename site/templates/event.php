@@ -71,7 +71,7 @@
 <section class="sponsors">
   <article class="centered-layout">
     <div class="column full">
-      <h2>Sponsors</h2>
+      <h2>Sponsors & Affiliates</h2>
     </div>
 
         <? foreach ( $sponsors as $sponsor ) { ?>
