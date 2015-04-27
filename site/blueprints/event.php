@@ -21,8 +21,7 @@ fields:
     width: 1/2
   time:
     label: Time
-    type: time
-    interval: 30
+    type: text
     width: 1/2
 
   intro:
