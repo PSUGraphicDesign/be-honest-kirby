@@ -74,7 +74,6 @@
       <h2>Sponsors</h2>
     </div>
 
-      <div class="wrapper">
         <? foreach ( $sponsors as $sponsor ) { ?>
           <div class="column fifth">
             <div class="card">
@@ -82,7 +81,6 @@
            </div> 
           </div>
         <? } ?>
-      </div>
 
   </article>
 </section>
