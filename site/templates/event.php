@@ -21,14 +21,14 @@
 <section class="speakers">
   <article>
     <div class="column full">
-      <h2>5x5 Speakers</h2>
+      <h2>5x5</h2>
     </div>
 
     <? foreach ( $speakers as $speaker ) { ?>
       <div class="column half mobile-full">
         <div id="<?= $speaker->uid() ?>" class="speaker card <?= BH::random_color() ?>" data-image="<?= $speaker->profile_image() ?>">
           <div class="name">
-            <?= $speaker->title() ?>
+            <a href="<?= $speaker->website() ?>" target="_blank"><?= $speaker->title() ?></a>
           </div>
           <div class="title">
             <?= $speaker->professional() ?>
@@ -55,13 +55,12 @@
           <div id="<?= $student->uid() ?>" class="column fifth tablet-third mobile-full">
             <div class="student card <?= strtolower($student->year()) ?>">
               <div class="name"> 
-               <?= $student->title() ?>
+                <a href="<?= $student->website() ?>" target="_blank"><?= $student->title() ?></a>
               </div>
               <div class="year">
                 <?= $student->year() ?>
               </div>
               <div class="website">
-                <a href="<?= $student->website() ?>" target="_blank"><?= BH::format_url($student->website()) ?></a>
               </div>
             </div>
           </div>
@@ -79,7 +78,7 @@
           <div class="column fifth">
             <div class="card">
               <?= html::a($sponsor['url'], html::img($page->image($sponsor['logo'])->url()), ['target' => '_blank']) ?>
-           </div> 
+            </div> 
           </div>
         <? } ?>
 
