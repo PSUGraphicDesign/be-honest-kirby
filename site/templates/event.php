@@ -51,7 +51,7 @@
     </div>
 
         <? foreach ( $students as $student ) { ?>
-          <div class="column fifth tablet-third mobile-full">
+          <div id="<?= $student->uid() ?>" class="column fifth tablet-third mobile-full">
             <div class="student card <?= strtolower($student->year()) ?>">
               <div class="name"> 
                <?= $student->title() ?>
