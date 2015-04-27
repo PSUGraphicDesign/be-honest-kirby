@@ -26,17 +26,18 @@
 
     <? foreach ( $speakers as $speaker ) { ?>
       <div class="column half mobile-full">
-        <div class="speaker card <?= BH::random_color() ?>">
-          <div class="speaker container">
-            <div class="name">
-              <?= $speaker->title() ?>
-            </div>
-            <div class="title">
-              <?= $speaker->professional() ?>
-            </div>
-            <div class="website">
-              <a href="<?= $speaker->website() ?>" target="_blank"><?= $speaker->website() ?></a>
-            </div>
+        <div id="<?= $speaker->uid() ?>" class="speaker card <?= BH::random_color() ?>" data-image="<?= $speaker->profile_image() ?>">
+          <div class="name">
+            <?= $speaker->title() ?>
+          </div>
+          <div class="title">
+            <?= $speaker->professional() ?>
+          </div>
+          <div class="website">
+            <a href="<?= $speaker->website() ?>" target="_blank"><?= $speaker->website() ?></a>
+          </div>
+          <div class="bio">
+            <?= $speaker->bio()->kirbytext() ?>
           </div>
         </div>
       </div>
