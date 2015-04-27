@@ -1,12 +1,12 @@
     </main>
     <footer>
       <section>
-        <article class="centered-layout">
-            <? foreach ( $departments as $department ) { ?>
-              <div class="column sixth">
-                <?= html::a($department['url'], html::img($page->image($department['logo'])->url()), ['target' => '_blank']) ?>
-              </div>
-            <? } ?>
+        <article class="departments centered-layout">
+          <? foreach ( $departments as $department ) { ?>
+            <div class="column sixth department-logo">
+              <?= html::a($department['url'], html::img($page->image($department['logo'])->url()), ['target' => '_blank']) ?>
+            </div>
+          <? } ?>
         </article>
 
         <article class="links">
