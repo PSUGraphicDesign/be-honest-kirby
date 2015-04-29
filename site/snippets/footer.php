@@ -44,6 +44,19 @@
         </article>
       </section>
     </footer>
+
+    <aside id="modal" style="display: none;">
+      <section class="mask"></section>
+      <section>
+        <article class="card">
+          <div class="column third mobile-full image">
+            <img />
+          </div>
+          <div class="column two-thirds mobile-full info"></div>
+        </article>
+      </section>
+    </aside>
+
   </body>
   <?= js('//use.typekit.net/hcj0qxr.js') ?>
   <script>try{Typekit.load();}catch(e){}</script>
