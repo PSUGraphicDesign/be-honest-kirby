@@ -7,6 +7,8 @@
 
     <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
 
+    <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+    
     <?= css('assets/css/be-honest.css') ?>
     <?= css('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css') ?>
 
