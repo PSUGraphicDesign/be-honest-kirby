@@ -9,6 +9,7 @@ body
 body
   font-size: 50px
   background-image: url('../images/pattern.png')
+  position: relative
 
 section
   // Sections divide areas within `header`, `main` and `footer`
@@ -65,8 +66,13 @@ footer
     .column
       text-align: center
 
+    a
+      &:hover
+        color: $color-orange
+
     ul
       padding: 0
+      font-size: ( $type-size-base * .6 )
       li
         list-style: none
 
@@ -77,13 +83,40 @@ footer
         border-bottom: 1px solid $color-white
 
     .donors
+      h5
+        color: $color-green
+      span
+        border-bottom-color: $color-green
     .officers
+      h5
+        color: $color-orange
+      span
+        border-bottom-color: $color-orange
     .past-speakers
+      h5
+        color: $color-pink
+      span
+        border-bottom-color: $color-pink
     .design-credits
+      h5
+        color: $color-green
+      span
+        border-bottom-color: $color-green
     .development-credits
+      h5
+        color: $color-orange
+      span
+        border-bottom-color: $color-orange
     .misc
+      h5
+        color: $color-pink
+      span
+        border-bottom-color: $color-pink
 
   .address
     .column
       text-align: center
       color: $color-pink
+      font-size: 18px
+      font-weight: 700
+      padding-bottom: 1rem

@@ -2,7 +2,7 @@
 // Header 
 
 .bh-header
-  background-image: url('../images/header.png')
+  background-image: url('../images/header.gif')
   background-repeat: no-repeat
   background-position: center
   max-width: 100%
@@ -52,5 +52,35 @@
       margin: 0 auto
 
 // Date Divider
-.divider
+
+.divider1
+  color: $color-green
+
+.divider2
   color: $color-orange
+
+.divider3
+  color: $color-pink
+
+// Modal
+
+aside
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+  .card
+    position: relative
+    .name
+      font-size: 50px
+      font-weight: 700
+
+  .mask
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: transparentize($color-black, 0.5)
