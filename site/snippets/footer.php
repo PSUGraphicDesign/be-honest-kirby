@@ -23,11 +23,11 @@
             <?= $site->footer_past_speakers()->kirbytext() ?>
           </div>
           <div class="column sixth design-credits tablet-third mobile-half">
-            <h5><span>Design Credits</span></h5>
+            <h5><span>Design</span></h5>
             <?= $site->footer_design_credits()->kirbytext() ?>
           </div>
           <div class="column sixth development-credits tablet-third mobile-half">
-            <h5><span>Development Credits</span></h5>
+            <h5><span>Website</span></h5>
             <?= $site->footer_development_credits()->kirbytext() ?>
           </div>
           <div class="column sixth misc tablet-third mobile-half">
