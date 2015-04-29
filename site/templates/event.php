@@ -26,7 +26,7 @@
 
     <? foreach ( $speakers as $speaker ) { ?>
       <div class="column half mobile-full">
-        <div id="<?= $speaker->uid() ?>" class="speaker card <?= BH::random_color() ?>" data-image="<?= $speaker->profile_image() ?>">
+        <div id="<?= $speaker->uid() ?>" class="speaker card <?= BH::random_color() ?>" data-image="<?= $speaker->images()->first()->url() ?>">
           <div class="name">
             <a href="<?= $speaker->website() ?>" target="_blank"><?= $speaker->title() ?></a>
           </div>
