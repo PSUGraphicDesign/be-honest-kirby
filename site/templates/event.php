@@ -21,7 +21,8 @@
 <section class="speakers">
   <article>
     <div class="column full">
-      <h2>5x5</h2>
+      <h2>5x5 <br>
+      <span style="font-family:'News Cycle'; font-size:0.3em; display:block;">5 Minutes, 5 Images, 10 Speakers</span></h2>
     </div>
 
     <? foreach ( $speakers as $speaker ) { ?>

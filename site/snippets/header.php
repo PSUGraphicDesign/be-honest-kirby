@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head>>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -23,7 +23,9 @@
         <article>
           <div class="column full">
 
-            <div class="bh-header"></div>
+            <div class="bh-header">
+              <img src="assets/images/animation.gif">
+            </div>
 
           </div>
 
