@@ -82,7 +82,7 @@
         <? foreach ( $sponsors as $sponsor ) { ?>
           <div class="column fifth">
             <div class="card">
-              <?= html::a($sponsor['url'], html::img($page->image($sponsor['logo'])->url()), ['target' => '_blank']) ?>
+              <?= html::a($sponsor['url'], html::img($page->image($sponsor['logo'])->url()), array('target' => '_blank')) ?>
             </div> 
           </div>
         <? } ?>

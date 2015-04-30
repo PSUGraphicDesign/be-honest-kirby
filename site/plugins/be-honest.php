@@ -1,9 +1,9 @@
 <? class BH {
   public static function body_classes () {
-    $classes = [
+    $classes = array(
       page()->uid(),
       page()->template()
-    ];
+    );
 
     $classes = array_filter($classes, function($class) {
       return !preg_match('/^\d+$/', $class);
@@ -13,7 +13,7 @@
   }
 
   public static function random_color () {
-    $colors = ['orange', 'green', 'pink'];
+    $colors = array('orange', 'green', 'pink');
     return $colors[array_rand($colors)];
   }
 
