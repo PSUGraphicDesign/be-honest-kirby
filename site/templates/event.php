@@ -13,8 +13,8 @@
           </div>
           <?= $page->intro()->kirbytext() ?>
           <article class="centered-layout">
-              <?= html::a(url('http://www.pdx.edu/the-arts/'), html::img($page->image('collegeofthearts.png')->url()), ['target' => '_blank']) ?>
-              <?= html::a(url('http://psu.gd'), html::img($page->image('psugd.png')->url()), ['target' => '_blank']) ?>
+              <?= html::a(url('http://www.pdx.edu/the-arts/'), html::img($page->image('collegeofthearts.png')->url()), array('target' => '_blank') ?>
+              <?= html::a(url('http://psu.gd'), html::img($page->image('psugd.png')->url()), array('target' => '_blank')) ?>
           </article>
         </div>
 
