@@ -39,7 +39,7 @@
             <?= $speaker->professional() ?>
           </div>
           <div class="website">
-            <a href="<?= $speaker->website() ?>" target="_blank"><?= $speaker->website() ?></a>
+            <a href="<?= $speaker->website() ?>" target="_blank"><?= BH::format_url($speaker->website()) ?></a>
           </div>
           <div class="bio">
             <?= $speaker->bio()->kirbytext() ?>
