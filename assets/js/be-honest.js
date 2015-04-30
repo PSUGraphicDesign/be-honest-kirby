@@ -27,7 +27,7 @@ $(document).ready(function () {
   function show_speaker_modal (speaker) {
     BH.modal.image.attr('src', speaker.data('image'));
     BH.modal.info.html(speaker.html());
-    BH.modal.card.css('top', $(window).scrollTop() + ( 0.25 * window.innerHeight ));
+    BH.modal.card.css('top', $(window).scrollTop() + ( 0.1 * window.innerHeight ));
     BH.modal.main.fadeIn();
   }
 
