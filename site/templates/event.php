@@ -56,20 +56,20 @@
       <h2>Participating Designers</h2>
     </div>
 
-        <? foreach ( $students as $student ) { ?>
-          <div id="<?= $student->uid() ?>" class="column fifth tablet-third mobile-full">
-            <div class="student card <?= strtolower($student->year()) ?>">
-              <div class="name"> 
-                <a href="<?= $student->website() ?>" target="_blank"><?= $student->title() ?></a>
-              </div>
-              <div class="year">
-                <?= $student->year() ?>
-              </div>
-              <div class="website">
-              </div>
-            </div>
+    <? foreach ( $students as $student ) { ?>
+      <div id="<?= $student->uid() ?>" class="column fifth tablet-third mobile-full">
+        <div class="student card <?= strtolower($student->year()) ?>">
+          <div class="name"> 
+            <a href="<?= $student->website() ?>" target="_blank"><?= $student->title() ?></a>
           </div>
-        <? } ?>
+          <div class="year">
+            <?= $student->year() ?>
+          </div>
+          <div class="website">
+          </div>
+        </div>
+      </div>
+    <? } ?>
   </article>
 </section>
 
